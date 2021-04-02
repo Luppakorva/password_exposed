@@ -1,5 +1,5 @@
 {
-    "name": "divineomega/password_exposed",
+    "name": "luppakorva/password_exposed",
     "description": "This PHP package provides a `password_exposed` helper function, that uses the haveibeenpwned.com API to check if a password has been exposed in a data breach.",
     "type": "library",
     "license": "LGPL-3.0-only",
@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": ">=8.0",  
         "psr/http-client": "^1.0",
         "psr/cache": "^1.0",
         "psr/http-message": "^1.0",
@@ -42,7 +42,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DivineOmega\\PasswordExposed\\": "src/"
+            "luppakorva\\PasswordExposed\\": "src/"
         },
         "files": [
             "src/PasswordExposedFunction.php"
@@ -50,7 +50,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DivineOmega\\PasswordExposed\\Tests\\": "tests/"
+            "luppakorva\\PasswordExposed\\Tests\\": "tests/"
         }
     },
     "extra": {
